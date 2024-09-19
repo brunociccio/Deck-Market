@@ -1,5 +1,11 @@
 package br.com.deckmarket.repository;
 
-public class CarrinhoRepository {
-    
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import br.com.deckmarket.model.Carrinho;
+
+@Repository
+public interface CarrinhoRepository extends JpaRepository<Carrinho, Long> {
+
 }
